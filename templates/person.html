@@ -1,0 +1,11 @@
+<H2>{{ person_name }}</H2>
+<P>Страны: {{ countries }}.</P>
+{% if person["death"] != None %}
+<P>Годы жизни: {{ person["birth"] }} - {{ person["death"]}}</A></P>
+{% else %}
+<P>Родился: {{ author["birth"] }}</P>
+<P>: {{ countries }}.</P>
+<H3>Список фильмов</H3>
+{% for film in films %}
+<P><A href = film/{{film[film_id]}}>{{film["name"]}} (- {{film["post"]}})</A></P>
+{% endfor %}

@@ -1,0 +1,5 @@
+<H3>Фильмы</H3>
+{% for film in films_list %}
+<P><A href=film/{{film["film_id"]}}>{{ film["name"] }} </A></P>
+{% endif %}
+{% endfor %}

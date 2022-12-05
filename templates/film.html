@@ -1,0 +1,13 @@
+<H2>{{ film_name }}</H2>
+<P>Год идания: {{ year }}.</P>
+<P>Страна(ы): {{ countries }}.</P>
+<H3>Актер(ы):</H3>
+{% for actor in actor_list %}
+<P><A href = person/{{actor[person_id]}}>{{{actor["name"]}}</A></P>
+<H3>Режиссер(ы):</H3>
+{% for director in director_list %}
+<P><A href = person/{{director[person_id]}}>{{director["name"]}</A></P>
+<H3>Сценарист(ы):</H3>
+{% for scriptwriter in scriptwriter_list %}
+<P><A href = person/{{scriptwriter[person_id]}}>{{scriptwriter["name"]}</A></P>
+{% endfor %}
